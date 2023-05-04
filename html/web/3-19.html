@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS3 에니메이션 예제</title>
+  <style>
+    div{
+      width: 50px;
+      height: 50px;
+      background-color: red;
+      position: relative;
+      -webkit-animation: myfirst 5s linear 0s infinite alternate;
+      animation: myfirst 5s linear 0s infinite alternate;
+    }
+    @-webkit-keyframes myfirst {
+      0% {background-color: red; left: 0px; top: 0px;}
+      25% {background-color: yellow; left: 150px; top: 0px;}
+      50% {background-color: blue; left: 150px; top: 150px;}
+      75% {background-color: green; left: 0px; top: 150px;}
+      100% {background-color: red; left: 0px; top: 0px;}
+    }
+    @keyframes myfirst {
+      0% {background-color: red; left: 0px; top: 0px;}
+      25% {background-color: yellow; left: 150px; top: 0px;}
+      50% {background-color: blue; left: 150px; top: 150px;}
+      75% {background-color: green; left: 0px; top: 150px;}
+      100% {background-color: red; left: 0px; top: 0px;}
+    }
+  </style>
+</head>
+<body>
+  <p>CSS3 키프레임 애니메이션</p>
+  <div><center><p>안녕?</p></center></div>
+</body>
+</html>

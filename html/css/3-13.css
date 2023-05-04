@@ -1,0 +1,15 @@
+#sampletable th{
+  background: silver;
+}
+
+#sampletable tr:nth-of-type(odd){
+  background: lightyellow;
+}
+
+#sampletable tr:nth-of-type(even){
+  background: lightblue;
+}
+
+#sampletable td:tdLfirst-of-type{
+  font-weight: bold;
+}

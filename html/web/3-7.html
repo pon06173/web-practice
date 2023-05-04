@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+    <title>3-7.html</title>
+    <style>
+      #mylist ol li {
+        font-style: italic;
+      }
+      div>p {
+        color: blue;
+      }
+      #sibling1+li {
+        color: red;
+      }
+      #sibling3~li {
+        color: green;
+      }
+    </style>
+</head>
+<body>
+  <h3>CSS 적용 방법</h3>
+    <div id="mylist">
+      <ol>
+        <li>인라인</li>
+        <li>내부</li>
+        <li>외부</li>
+      </ol>
+    </div>
+    <div class="container">
+      <article>
+        <p>Hello World.</p>
+      </article>
+      <p>Hello Mobile Web App.</p>
+    </div>
+    <ol>
+      <li id="sibling1">형제 1</li>
+      <li id="sibling2">형제 2</li>
+      <li id="sibling3">형제 3</li>
+      <li id="sibling4">형제 4</li>
+      <li id="sibling5">형제 5</li>
+    </ol>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>미디어 쿼리 예제</title>
+  <style>
+    .username::before{
+      content: "사용자 이름을 입력하세요";
+    }
+    @media screen and (max-width: 900px){
+      .username::before{
+        content: "사용자 이름";
+      }
+    }
+    @media screen and (max-width: 450px){
+      .username::before{
+        content: "";
+      }
+    }
+    img, p {
+      display: inline;
+    }
+  </style>
+</head>
+<body>
+  <form method="get" action="from_app.js">
+    <img src="../img/user.png" style width="30" height="30" alt="User_ID" width="30" height="30">
+    <p class="username"></p>
+    <input type="text" name="User_ID">
+  </form>
+</body>
+</html>
